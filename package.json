@@ -8,18 +8,24 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
   "dependencies": {
-    "pinia": "^2.0.21",
-    "vue": "^3.2.37",
-    "vue-router": "4",
-    "vite": "^3.1.0",
     "@vitejs/plugin-vue": "^3.1.0",
-    "@vitejs/plugin-vue-jsx": "^2.0.1"
+    "@vitejs/plugin-vue-jsx": "^2.0.1",
+    "pinia": "^2.0.21",
+    "vite": "^3.1.0",
+    "vue": "^3.2.37",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@types/node": "^18.7.15",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": ">=5.31.0",
+    "cz-customizable": "^7.0.0",
     "eslint": "^8.0.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
