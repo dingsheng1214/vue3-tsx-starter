@@ -17,6 +17,12 @@
       "config": ".cz-config.cjs"
     }
   },
+  "lint-staged": {
+    "src/**/*.{js,vue,ts,jsx,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "dependencies": {
     "@vitejs/plugin-vue": "^3.1.0",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
@@ -41,6 +47,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^9.4.0",
     "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "sass": "^1.54.8",
     "typescript": "*",
